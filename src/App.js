@@ -1,11 +1,13 @@
 import React from "react";
 import DevTools from './DevTools';
+import { Router, hashHistory } from 'react-router';
+import routes from './routes';
 
 class App extends React.Component {
     render() {
         return (
             <div>
-                <h1>Inicjalizacja projektu</h1>
+                <Router history={hashHistory} routes={routes}/>
                 <DevTools />
             </div>
         );
