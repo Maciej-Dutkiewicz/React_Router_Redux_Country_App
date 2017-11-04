@@ -7,7 +7,7 @@ class App extends React.Component {
     render() {
         return (
             <div>
-                <Router history={hashHistory} routes={routes}/>
+                <Router history={hashHistory} routes={routes} />
                 <DevTools />
             </div>
         );
